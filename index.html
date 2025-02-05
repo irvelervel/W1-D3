@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Applicazione di regole CSS</title>
+    <style>
+      /* 2) CSS INCORPORATO (EMBEDDED) */
+      h1 {
+        /* allineiamo tutti i tag <h1> al centro */
+        text-align: center;
+        font-style: italic;
+      }
+
+      nav li {
+        /* SELETTORE DI DISCENDENZA */
+        /* selettore che prende TUTTI gli <li> che sono DENTRO ad una <section> */
+        font-weight: bold;
+      }
+
+      body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      * {
+        /* questo è un selettore che prende indiscriminatamente TUTTI i tag! */
+      }
+    </style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -33,7 +57,7 @@
         <!-- vantaggi: facile e immediata da applicare -->
         <!-- svantaggi: sporchiamo l'HTML, non è riutilizzabile (non è DRY) e
             si porta in dote una SPECIFICITÀ ALTISSIMA :( -->
-        <p style="color: rgb(146, 14, 14)">
+        <p style="color: rgb(146, 14, 14); background-color: aquamarine">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam
           voluptatem, quam vitae fugiat voluptatibus beatae modi commodi libero
           necessitatibus repellat ut dolorum, corporis consectetur recusandae ex
@@ -44,6 +68,13 @@
           porro ad suscipit voluptatibus corrupti odio autem, odit obcaecati,
           aut dolor nisi animi? Quia, culpa possimus. Quod quaerat atque modi.
         </p>
+      </section>
+      <section>
+        <ul>
+          <li>Pane</li>
+          <li>Latte</li>
+          <li>Yoghurt</li>
+        </ul>
       </section>
     </main>
     <footer>
