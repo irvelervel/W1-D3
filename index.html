@@ -26,19 +26,51 @@
       * {
         /* questo è un selettore che prende indiscriminatamente TUTTI i tag! */
       }
+
+      footer p {
+        text-align: left;
+      }
+
+      /* # + id */
+      #second-menu-element {
+        /* display: none; rimuove un elemento dalla pagina */
+        visibility: hidden;
+      }
+
+      nav li {
+        visibility: visible;
+      }
+
+      #yoghurt {
+        /* 100 */
+        font-size: 2em;
+      }
+
+      /* . + class */
+      .bigger {
+        /* 10 */
+        font-size: 1.5em;
+      }
+
+      section #yoghurt {
+        /* 1 + 100 = 101 */
+        display: none;
+      }
     </style>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- il footer alla fine verrà allineato a DX perchè la riga 34 è l'ultima
+     applicata!  -->
   </head>
   <body>
     <header>
       <!-- SEZIONE DI INTESTAZIONE (titoli, navbar, menu etc.) -->
-      <h1>METODI DI APPLICAZIONE CSS</h1>
+      <h1 style="font-style: normal">METODI DI APPLICAZIONE CSS</h1>
       <nav>
         <ul>
           <li>
             <a href="#">Home</a>
           </li>
-          <li>
+          <li id="second-menu-element">
             <a href="#">Contatti</a>
           </li>
           <li>
@@ -71,9 +103,9 @@
       </section>
       <section>
         <ul>
-          <li>Pane</li>
+          <li class="bigger">Pane</li>
           <li>Latte</li>
-          <li>Yoghurt</li>
+          <li class="bigger" id="yoghurt">Yoghurt</li>
         </ul>
       </section>
     </main>

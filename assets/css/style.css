@@ -1,5 +1,10 @@
 /* 3) CSS ESTERNO */
 
+h1 {
+  font-style: italic;
+}
+
 footer p {
-  text-align: center;
+  text-align: center; /* verrà ignorata in favore della riga successiva! */
+  text-align: right;
 }
